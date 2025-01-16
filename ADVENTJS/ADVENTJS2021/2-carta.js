@@ -2,14 +2,18 @@ const carta = 'bici coche balón _playstation bici coche peluche'
 
 export default function listGifts(letter) {
     
-    let letters = letter.split(" ")
+    let letters = letter.trim().split(" ")
    
+    const letterWithoutUnderscore =  letters.filter(element => !element.includes("_"))
+
+    const finalLetter =  letterWithoutUnderscore.reduce((conteo,elemento)=>{
+        conteo[elemento] = (conteo[elemento] || 0 ) +1
+       return conteo
+    },{})
+
+    return finalLetter
 
 
-
-
-
-    return letters
    }
 
 const regalos = listGifts(carta)
