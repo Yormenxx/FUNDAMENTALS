@@ -67,4 +67,24 @@ const myPerson:Person = {
 
 printUser(myPerson)
 
+//Optional properties , just add; ?
+
+type User={
+    name?:string,
+    surname?:string,
+    age?:number
+}
+
+const person1:User = {
+    name:"juan",
+    surname:"perez"
+}
+
+const person2:User ={
+    name:"Raul",
+    surname:"perez",
+    age:22
+}
+
+
 
