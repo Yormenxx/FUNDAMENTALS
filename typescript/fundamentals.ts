@@ -36,3 +36,17 @@ const persona : {nombre:string; apellido:string; edad:number} = {
 console.log(persona.nombre + persona.apellido + persona.edad)
 
 
+
+function printUser():{nombre:string; apellido:string;}{
+    return {
+        nombre:"juan",
+        apellido:"perez"
+    }
+}
+
+const res = printUser();
+
+console.log(res)
+
+
+
