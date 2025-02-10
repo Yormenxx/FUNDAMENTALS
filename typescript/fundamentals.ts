@@ -86,5 +86,26 @@ const person2:User ={
     age:22
 }
 
+//Readonly nos permite que la variable o constante sean inmutables
 
+type User={
+    name?:string,
+    surname?:string,
+    age?:number,
+    readonly location?:string
+}
+
+const person1:User = {
+    name:"juan",
+    surname:"perez",
+    location:"colombia"
+}
+
+const person2:User ={
+    name:"Raul",
+    surname:"perez",
+    age:22
+}
+
+person1.location="puerto rico";
 
