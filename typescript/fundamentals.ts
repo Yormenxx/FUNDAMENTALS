@@ -109,3 +109,48 @@ const person2:User ={
 
 person1.location="puerto rico";
 
+
+// la intersección de tipos te permite combinar múltiples tipos en uno solo. 
+// El nuevo tipo resultante posee todas las propiedades de los tipos que lo componen.
+//Se usa & para unirlos
+
+type Person = {
+    name?:string,
+    age?:number
+}
+
+type Employee ={
+    id?:number,
+    title?:string
+}
+
+//hacemos las interseccion de tipos
+
+type PersonAndEmloyee = Person & Employee;
+
+const person1:PersonAndEmloyee={
+    name:"juan",
+    age:22,
+    id:123,
+    title:"manager"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
