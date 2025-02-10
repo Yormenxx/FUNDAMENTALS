@@ -49,4 +49,22 @@ const res = printUser();
 console.log(res)
 
 
+//type aliases
+
+type Person = {
+    nombre: string,
+    apellido : string
+}
+
+function printUser(person:Person):void{
+    console.log(`Tu nombre es: ${person.nombre} ${person.apellido}`)
+}
+
+const myPerson:Person = {
+    nombre:"juan",
+    apellido:"perez"
+}
+
+printUser(myPerson)
+
 
