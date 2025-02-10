@@ -26,6 +26,13 @@ console.log(typeof(tech));
 console.log(typeof(favNumber3));
 console.log(typeof(isHard2));
 
+//Objetos
 
+const persona : {nombre:string; apellido:string; edad:number} = {
+    nombre:"juan",
+    apellido:"perez",
+    edad:12
+}
+console.log(persona.nombre + persona.apellido + persona.edad)
 
 
