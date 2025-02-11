@@ -136,14 +136,35 @@ const person1:PersonAndEmloyee={
 }
 
 
+ //las uniones te permiten crear un nuevo tipo que puede ser uno u otro de los tipos existentes. 
+ //Esto es útil cuando una variable o propiedad 
+ //puede tener diferentes tipos de valores. la union se hace con || 
+
+let num1: number | string ;
+
+type resultado = number | string;
+
+function getResult(valor:boolean):resultado{
+    if(valor){
+        return 10;
+    }else{
+        return "Error"
+    }
+}
+
+
+let resul1 = getResult(false)
+console.log(resul1)
 
 
 
 
 
 
+//Los tipos literales nos ayudan a fijas un valor que se de tipo e igual valor
 
-
+let saludo :"hola" = "hola"
+console.log(saludo)
 
 
 
