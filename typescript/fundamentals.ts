@@ -167,6 +167,9 @@ let saludo :"hola" = "hola"
 console.log(saludo)
 
 
+let color: "red"|"blue"|"orange"
+color = "red"
+console.log(color)
 
 
 
